@@ -1,36 +1,20 @@
 # gpquantum
 
-FIXME: Write a one-line description of your library/project.
+This is an evolution system on top of a quantum computer simulator, written in clojure. The simulator was translated from a clojurescript simulator written by Omri Bernstein.
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+The core.clj file contains everything related to the evolution. All other source files are part of the simulator. The entry point to the simulator is test-quantum-program, with syntax as follows:
+    
+    (test-quantum-program :program program :read-from [0] :cases cases)
+    
+program: A list of quantum gates, you can generate random ones using generate-qgame-program
+read-from: The output qubit, the default used is 0.
+cases: Defines what problem you are testing. Examples for the OR-problem, and the AND-OR-problem can be found in core.clj
 
 ## Setup
 
-To get an interactive development environment run:
 
-    lein figwheel
-
-and open your browser at [localhost:3449](http://localhost:3449/).
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
-
-    (js/alert "Am I connected?")
-
-and you should see an alert in the browser window.
-
-To clean all compiled files:
-
-    lein clean
-
-To create a production build run:
-
-    lein do clean, cljsbuild once min
-
-And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL. 
 
 ## License
 
