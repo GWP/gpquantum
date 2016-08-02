@@ -1,6 +1,6 @@
 # gpquantum
 
-This is an evolution system on top of a quantum computer simulator, written in clojure. The simulator was translated from a clojurescript simulator written by Omri Bernstein.
+This is an evolution system on top of a quantum computer simulator, written in Clojure. The simulator was translated from a Clojurescript simulator written by Omri Bernstein, which was translated from a Common Lisp simulator written by Lee Spector.
 
 ## Overview
 
